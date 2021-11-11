@@ -1,0 +1,78 @@
+/* CSS Reset */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dongle&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: " ";
+  position: absolute;
+  background-image: url("assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.instructions {
+  background-color: black;
+  color: white;
+  width: 100%;
+  font-family: "Dongle", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.header-input {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#object_name {
+  margin-left: 35%;
+  width: 400px;
+  padding: 10px;
+  border: 2px dotted #fdf;
+}
+
+#object_name:focus {
+  outline: none;
+  border: 2px dotted rgb(150, 13, 219);
+}
+
+.start {
+  margin-left: 47%;
+  padding: 5px 30px;
+  background-color: #f0e68c;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.start:hover {
+  cursor: pointer;
+  background-color: #ece17e;
+}
+
+canvas {
+  border: 2px dotted #6a5acd;
+  box-shadow: 5px 10px 8px #ccc;
+}

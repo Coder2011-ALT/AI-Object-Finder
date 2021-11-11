@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>AI Object Finder</title>
+  </head>
+  <body>
+    <h1 class="heading">AI OBJECT FINDER</h1>
+    <p class="instructions">
+      The input name you give should match the names present in our object
+      detection model.
+    </p>
+    <h4 class="header-input">Object Name:</h4>
+    <input
+      type="text"
+      id="object_name"
+      placeholder="Write Object Name Here..."
+    />
+    <br /><br />
+    <button class="start" onclick="start();">Start</button>
+    <div class="status"></div>
+    <div class="available-toggle"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
