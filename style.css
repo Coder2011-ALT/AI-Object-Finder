@@ -59,7 +59,9 @@ body::before {
 }
 
 .start {
-  margin-left: 47%;
+  display: block;
+  margin: 0 auto;
+  width: 91px;
   padding: 5px 30px;
   background-color: #f0e68c;
   border: none;
@@ -74,5 +76,5 @@ body::before {
 
 canvas {
   border: 2px dotted #6a5acd;
-  box-shadow: 5px 10px 8px #ccc;
+  box-shadow: 5px 10px 8px rgba(133, 133, 133, 0.8);
 }
